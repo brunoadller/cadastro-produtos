@@ -1,4 +1,4 @@
-const Formulario = ({botao, eventoTeclado, cadastrar, obj}) => {
+const Formulario = ({botao, eventoTeclado, cadastrar, obj, cancelar, remover, alterar}) => {
 
     return(
         <form>
@@ -10,9 +10,9 @@ const Formulario = ({botao, eventoTeclado, cadastrar, obj}) => {
                 <input type="button" onClick = {() => cadastrar()} value = "Cadastrar"  className="btn btn-primary" />
                 :
                 <div>
-                    <input type="button" value = "Alterar"  className="btn btn-warning"/>
-                    <input type="button" value = "Remover" className="btn btn-danger"/>
-                    <input type="button" value = "Cancelar" className="btn btn-secondary"/>
+                    <input type="button" value = "Alterar"  onClick = {alterar} className="btn btn-warning"/>
+                    <input type="button" value = "Remover" onClick = {remover} className="btn btn-danger"/>
+                    <input type="button" value = "Cancelar" onClick={cancelar} className="btn btn-secondary"/>
                 </div>
             }
             
