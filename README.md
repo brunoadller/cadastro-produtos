@@ -1,1 +1,1 @@
-# Projeto de cadastro de produtos em desenvovimento. Realizado com Java Spring Boot e ReactJs
+# Projeto de cadastro de produtos. Realizado com Java Spring Boot e ReactJs
